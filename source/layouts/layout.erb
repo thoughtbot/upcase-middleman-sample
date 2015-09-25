@@ -7,13 +7,33 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "thoughtbot" %></title>
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
 
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <header>
+      <% link_to "/", class: "logo-link" do %>
+        <%= image_tag "ralph.png" %>
+      <% end %>
+      <nav>
+        <ul>
+          <li><%= link_to "Work", "/work" %></li>
+          <li><%= link_to "Products", "/products" %></li>
+          <li><%= link_to "Open Source", "/open-source" %></li>
+          <li><%= link_to "Books", "/books" %></li>
+          <li><%= link_to "Podcasts", "/podcasts" %></li>
+        </ul>
+      </nav>
+      <div class="contact">
+        <%= link_to "Contact Us", "/locations" %>
+      </div>
+    </header>
+    <div class="content">
+      <%= yield %>
+    </div>
   </body>
 </html>
