@@ -1,0 +1,12 @@
+<div class="location-card">
+  <%= image_tag location["image"] %>
+  <h3><%= location["city"] %></h3>
+  <hr />
+  <ul>
+    <% location["address"].each do |line| %>
+      <li><%= line %></li>
+    <% end %>
+  </ul>
+  <hr />
+  <%= link_to "View Map" %>
+</div>

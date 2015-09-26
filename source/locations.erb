@@ -10,42 +10,7 @@ clients and supporting our local communities. Want to join our team?
 </p>
 
 <div class="locations">
-  <div class="location-card">
-    <%= image_tag "austin.jpg" %>
-    <h3>Austin, TX</h3>
-    <hr />
-    <ul>
-      <li>701 Brazos St.</li>
-      <li>5th Floor</li>
-      <li>Austin, TX 78701</li>
-    </ul>
-    <hr />
-    <%= link_to "View Map" %>
-  </div>
-
-  <div class="location-card">
-    <%= image_tag "boston.jpg" %>
-    <h3>Boston, MA</h3>
-    <hr />
-    <ul>
-      <li>41 Winter St.</li>
-      <li>7th Floor</li>
-      <li>Boston, MA 02108</li>
-    </ul>
-    <hr />
-    <%= link_to "View Map" %>
-  </div>
-
-  <div class="location-card">
-    <%= image_tag "denver.jpg" %>
-    <h3>Denver, CO</h3>
-    <hr />
-    <ul>
-      <li>1600 Champa Street</li>
-      <li>Suite 340</li>
-      <li>Denver, CO 80202</li>
-    </ul>
-    <hr />
-    <%= link_to "View Map" %>
-  </div>
+  <% data["locations"].each do |location| %>
+    <%= partial "location", locals: { location: location } %>
+  <% end %>
 </div>
