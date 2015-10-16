@@ -1,0 +1,19 @@
+.locations {
+  .location-card {
+    @include span-columns(4);
+
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+    img {
+      max-width: 100%;
+    }
+
+    &:nth-child(3n) {
+      @include omega;
+    }
+  }
+}

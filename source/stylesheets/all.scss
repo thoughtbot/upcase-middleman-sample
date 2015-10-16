@@ -1,12 +1,27 @@
 @charset "utf-8";
 
+@import "normalize";
+@import "grid-settings";
+@import "bourbon";
+@import "neat";
+@import "locations";
+
 .content {
   max-width: 860px;
+  min-height: 900px;
   margin: 40px auto;
 }
 
-.content h2 {
+h2 {
   color: #C32F34;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 10px;
+  background-color: darken(red, 10%);
+  color: lighten(red, 35%);
 }
 
 .logo-link {
@@ -51,20 +66,4 @@ nav li {
 
 .contact a {
   float: right;
-}
-
-
-
-
-
-.location-card {
-  width: 250px;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-.location-card img {
-  max-width: 100%;
 }

@@ -10,7 +10,7 @@
     <title><%= current_page.data.title || "thoughtbot" %></title>
     <link rel="icon" type="image/ico" href="/favicon.ico" />
 
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
   </head>
 
@@ -35,5 +35,7 @@
     <div class="content">
       <%= yield %>
     </div>
+    <footer>
+    </footer>
   </body>
 </html>
