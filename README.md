@@ -2,10 +2,11 @@ Upcase Middleman Sample
 =======================
 
 This repo contains a sample project build with the [Middleman][] static site
-generator.
+generator. This project was built for [a video on Upcase][], our learning
+platform.
 
 [Middleman]: https://middlemanapp.com/
-
+[a video on Upcase]: https://upcase.com/videos/building-static-sites-with-middleman
 
 Getting Started
 ---------------
